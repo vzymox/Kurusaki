@@ -1,0 +1,6 @@
+git+https://github.com/Rapptz/discord.py@master
+pymongo
+dnspython
+requests
+https://github.com/Nekos-life/nekos.py/archive/master.zip
+bs4
