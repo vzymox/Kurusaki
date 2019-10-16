@@ -6,7 +6,7 @@ import json
 
 
 bot = commands.Bot(command_prefix=commands.when_mentioned_or('s.'), pm_help=True, owenr_id=185181025104560128, case_insensitive=True)
-bot.remove_command('help')
+# bot.remove_command('help')
 
 cogs = ['help', 'fun']
 
