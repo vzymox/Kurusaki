@@ -12,6 +12,7 @@ cogs = ['help', 'fun']
 
 @bot.event
 async def on_ready():
+    await bot.change_presence(activity=discord.Activity(type=1,name="Playing status name"))
     print(bot.user.name)
 
 
