@@ -8,7 +8,9 @@ import json
 bot = commands.Bot(command_prefix=commands.when_mentioned_or('s.'), pm_help=True, owenr_id=185181025104560128, case_insensitive=True)
 # bot.remove_command('help')
 
-cogs = ['help', 'fun']
+cogs = ['Cogs.help', 'Cogs.fun']
+status={'status':0}
+
 
 @bot.event
 async def on_ready():
@@ -16,6 +18,28 @@ async def on_ready():
     print(bot.user.name)
 
 
+    
+status_names=['Potion Maker','Hello Kitty']     #Enter your status names in the list
+async def chanage_status():
+    while True:
+        if status['status'] == 1:
+            await bot.change_presence(activity=discord.Activity(type=1,name=random.choice(status_nammes)))
+            await asyncio.sleep(20) #Enter the sleep or wait time in here by seconds.
+        else:
+            break
+        
+    
+    
+
+@bot.command(name='status') #Turn on or off the changing status
+async def status_change(msg):
+    if status['status'] == 1:
+        status['status']=0
+    else:
+        status['status']=1
+        awaait change_status()
+    
+    
 
 @bot.event
 async def on_command_error(msg,error):
