@@ -55,42 +55,6 @@ async def on_command_error(msg,error):
 
 
 
-# @bot.command(hidden=True)
-# async def play(msg):
-#     pass
-
-# @bot.command(hidden=True)
-# async def leave(msg):
-#     pass
-
-# @bot.command(hidden=True)
-# async def join(msg):
-#     pass
-
-# @bot.command(hidden=True)
-# async def pause(msg):
-#     pass
-
-# @bot.command(hidden=True)
-# async def resume(msg):
-#     pass
-
-# @bot.command(hidden=True)
-# async def volume(msg):
-#     pass
-
-# @bot.command(hidden=True)
-# async def skip(msg):
-#     pass
-
-# @bot.command(hidden=True)
-# async def clear_songs(msg):
-#     pass
-
-# @bot.command(hidden=True)
-# async def mark_song(msg):
-#     pass
-
 
 
 
